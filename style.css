@@ -1,0 +1,49 @@
+/* Style zum Projekt: Die Top 10 Audi-Modelle */
+
+/* Font */
+.haupt-schrift-raleway {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 1px;
+}
+
+/* Icons */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 100,
+  'GRAD' 900,
+  'opsz' 24
+}
+
+.icon {
+  color: #000000A6;
+  width: 50px;
+  transform: scale(1.2);
+}
+
+/* Chronisch sotiert */
+
+#navbarBrandImg {
+  margin-right: 56px;
+}
+.nav-link {
+  margin-left: 20px;
+}
+.navbar-toggler{
+  border: none;
+}
+.navbar-toggler-style {
+  color: #000000A6;
+  transform: scale(1.5);
+}
+
+/* Mediaqueries */
+
+@media only screen and (min-width: 1200px) {
+  #navbarBrandImg {
+    margin-right: 10px;
+  }
+}
