@@ -20,11 +20,16 @@
 
 .icon {
   color: #000000A6;
-  width: 50px;
+  width: 30px;
   transform: scale(1.2);
+  margin-right: 15px;
+  padding-left: 3px;
 }
 
 /* Chronisch sotiert */
+body {
+  color: #000000A6;
+}
 
 #navbarBrandImg {
   margin-right: 56px;
@@ -39,11 +44,38 @@
   color: #000000A6;
   transform: scale(1.5);
 }
+#anmeldenButton {
+  box-shadow: 0 0 10px #000000A6;
+  height: 60px;
+}
+#anmeldenButton:hover {
+  background-color: white;
+  color: black;
+}
+#registrierenButton {
+  box-shadow: 0 0 10px #000000A6;
+  height: 60px;
+}
+#registrierenButton:hover {
+  background-color: #212529;
+  color: white;
+}
+#sucheInput {
+  box-shadow: 0 0 10px #000000A6;
+  height: 60px;
+}
+#sucheInput:hover {
+  background-color: white;
+  color: #000000A6
+}
 
 /* Mediaqueries */
 
 @media only screen and (min-width: 1200px) {
   #navbarBrandImg {
     margin-right: 10px;
+  }
+  .active {
+  border-bottom: 1px solid #000000A6;
   }
 }

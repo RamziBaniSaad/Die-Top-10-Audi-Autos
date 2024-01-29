@@ -36,6 +36,9 @@
     <!-- Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
+    <!-- Animierts Icons -->
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+
     <!-- Mein JavaScript -->
     <script src="script.js"></script>
 
@@ -68,7 +71,7 @@
           
           <!-- Logo -->
           <a href="#" class="navbar-brand mx-auto">
-            <img id="navbarBrandImg" src="img/audiLogoBlack.png" alt="Logo" width="50">
+            <img id="navbarBrandImg" src="img/audiLogoBlack.png" alt="Logo" width="60">
           </a>
 
           <!-- Navbar-Inhalt -->
@@ -79,20 +82,90 @@
               <a href="#" class="nav-link">Service</a>
               <a href="#" class="nav-link">Über uns</a>
 
+              <br>
+              <a href="#sucheOffcanvas" data-bs-toggle="offcanvas" class="nav-link d-xl-none">Suche</a>
+              <a href="#anmeldeOffcanvas" data-bs-toggle="offcanvas" class="nav-link d-xl-none">Favoriten</a>
+              <a href="#anmeldeOffcanvas" data-bs-toggle="offcanvas" class="nav-link d-xl-none">Account</a>
+              <hr class="d-xl-none">
             </div>
-            <a href="#">
-              <span class="material-symbols-outlined icon d-none d-xl-inline-block">search</span>
+            <a href="#sucheOffcanvas" data-bs-toggle="offcanvas">
+              <span class="material-symbols-outlined icon d-none d-xl-inline-block" data-bs-toggle="tooltip" data-bs-placement="bottom"
+              data-bs-title="Suche">search</span>
             </a>
-            <a href="#">
-              <span class="material-symbols-outlined icon d-none d-xl-inline-block">favorite</span>
+            <a href="#anmeldeOffcanvas" data-bs-toggle="offcanvas">
+              <span class="material-symbols-outlined icon d-none d-xl-inline-block" data-bs-toggle="tooltip" data-bs-placement="bottom"
+              data-bs-title="Favoriten">favorite</span>
             </a>
-            <a href="#">
-              <span class="material-symbols-outlined icon d-none d-xl-inline-block">person</span>
+            <a href="#anmeldeOffcanvas" data-bs-toggle="offcanvas">
+              <span class="material-symbols-outlined icon d-none d-xl-inline-block" data-bs-toggle="tooltip" data-bs-placement="bottom"
+              data-bs-title="Account">person</span>
             </a>
           </div>
         </div>
       </nav>
       <!-- Navbar Ende -->
+
+      <!-- Offcanvas für Anmeldung -->
+      <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="anmeldeOffcanvas">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title">Willkommen bei den Top 10 Audi Modellen</h5>
+          <button style="border-radius: 5px; border: none;  background-color: #fff;" type="button" class="material-symbols-outlined navbar-toggler-style" data-bs-dismiss="offcanvas">close</button>
+        </div>
+        <hr class="w-75 mx-auto">
+
+        <div class="offcanvas-body">
+          <p>Melden Sie sich an und steigen Sie ein in die digitale Welt von Audi!</p>
+          <a href="#" class="nav-link" style="color: black">Mehr Erfahren
+            <lord-icon
+            src="https://cdn.lordicon.com/vduvxizq.json"
+            trigger="hover"
+            colors="primary:#000000"
+            style="width:25px;height:25px; transform:translateY(7px)">
+            </lord-icon>
+          </a>
+
+          <div  class="row mt-5">
+            <button id="anmeldenButton" type="button" class="btn btn-dark offset-1 col-10">Anmelden</button>
+          </div>
+          <div  class="row mt-2">
+            <button id="registrierenButton" type="button" class="btn btn-light border-dark border offset-1 col-10">Registrieren</button>
+          </div>
+        </div>
+
+        <div class="offcanvas-footer p-3">
+          <img src="img/audiLogoBlack.png" width="50px" alt="Logo">
+          Ramzi Bani Saad
+        </div>
+      </div>
+
+      <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="sucheOffcanvas">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title">Willkommen bei den Top 10 Audi Modellen</h5>
+          <button style="border-radius: 5px; border: none;  background-color: #fff;" type="button" class="material-symbols-outlined navbar-toggler-style" data-bs-dismiss="offcanvas">close</button>
+        </div>
+        <hr class="w-75 mx-auto">
+
+        <div class="offcanvas-body">
+          <h3 class=" offset-1 col-10">Suche
+          </h3>
+          <div class="row mt-5">
+            <form>
+              <input id="sucheInput" class="col-10 offset-1 btn border border-dark" type="search" placeholder="Audi R8">
+            </form>
+          </div>
+          <div class="row mt-2">
+            <form>
+              <input id="sucheInput" class="col-10 offset-1 btn btn-dark" type="submit" value="Suchen">
+            </form>
+          </div>
+        </div>
+
+        <div class="offcanvas-footer p-3">
+          <img src="img/audiLogoBlack.png" width="50px" alt="Logo">
+          Ramzi Bani Saad
+        </div>
+      </div>
+
       
     </header>
     <!-- header Ende -->
@@ -100,9 +173,8 @@
     <!-- main Anfang -->
     <main>
       <div class="container">
-        <video type="video/mp4" src="vids/audi-teaser.mp4" class="w-100" autoplay muted loop playsinline></video>
+        <img src="img/top10Audis.png" alt="Bild" class="w-100 border">
       </div>
-      
     </main>
     <!-- main Ende -->
 
