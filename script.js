@@ -4,18 +4,25 @@
 $(document).ready(function() {
 
 // Navbar Toggler Icon Wechsel
-i = 1;
+let i = 1;
 
 $("#navbarToggler").click( function() {
   if (i == 1) {
-    $("#navbarTogglerIcon").html("close");
-    i++;
+    $("#navbarToggler").attr("disabled", "");
+    setTimeout(() => {
+      $("#navbarTogglerIcon").html("close");
+      i++;
+      $("#navbarToggler").removeAttr("disabled", "");
+    }, 400);
   }
   else if (i == 2) {
+    $("#navbarToggler").attr("disabled", "");
+    setTimeout(() => {
     $("#navbarTogglerIcon").html("menu");
-    i--;
+      i--; 
+      $("#navbarToggler").removeAttr("disabled", "");
+    }, 400);
   }
-  
 })
 
 
