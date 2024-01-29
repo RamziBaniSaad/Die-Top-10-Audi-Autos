@@ -39,6 +39,10 @@ $("#navbarToggler").click( function() {
   }
 })
 
+// Intro Button
+$("#introButton").click(function() {
+  window.scrollBy(0, document.getElementById("intro").offsetHeight);
+});
 
 
 });

@@ -25,3 +25,5 @@ Die Versionen:
 1.1 - Navbar - Navbar Style gefunden und entwickelt, Fonts und Icons hinzugefügt, Logo angepasst, Navbar-Toggler verschönert und reaktiv gemacht, ein Audi-Teaser im main-tag eingeführt.
 
 1.2 - Header - Header voraussichtlich fertig.
+
+2.0 - Main - Main angefangen, intro voraussichtlich fertig.

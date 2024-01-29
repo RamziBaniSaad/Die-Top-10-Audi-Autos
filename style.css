@@ -31,6 +31,7 @@ body {
   color: #000000A6;
 }
 
+/* header */
 #navbarBrandImg {
   margin-right: 56px;
 }
@@ -69,6 +70,45 @@ body {
   color: #000000A6
 }
 
+/* main */
+.intro{
+  background-image: linear-gradient(to top, rgba(0,0,0, .3), rgba(255,255,255,.5)), url(img/introImg.jpg);
+  background-size:cover;
+  height: 900px;
+  margin-top: 86px;
+  min-width: 200px;
+}
+#introHeading {
+  padding: 10% 0 0 1%;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 40;
+}
+#introHeading small{
+  font-weight: 600;
+  letter-spacing: .5px;
+  font-size: 20px;
+}
+#introText {
+  padding: 1% 0 0 1%;
+  font-size: 20px;
+  font-weight: 600;
+}
+#introButton {
+  margin: 2% 0 0 1%;
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 15px;
+  box-shadow: 0 0 5px #ffffffA6;
+}
+#introButtonScroll {
+  width: 30px;
+  height: 30px;
+  padding: 8px 0 0 5px;
+}
+
+/* footer */
+
 /* Mediaqueries */
 
 @media only screen and (min-width: 1200px) {
@@ -77,5 +117,89 @@ body {
   }
   .active {
   border-bottom: 1px solid #000000A6;
+  }
+}
+
+@media only screen and (max-width: 1615px) {
+  .intro {
+    height: 800px;
+  }
+}
+@media only screen and (max-width: 1420px) {
+  .intro {
+    height: 700px;
+  }
+}
+@media only screen and (max-width: 1245px) {
+  .intro {
+    height: 600px;
+  }
+}
+@media only screen and (max-width: 1060px) {
+  .intro {
+    height: 500px;
+  }
+  #introHeading {
+    font-size: 35px;
+    padding-left: 5%;
+  }
+  #introHeading small {
+    font-size: 15px;
+    display: none;
+  }
+  #introText {
+    font-size: 15px;
+    text-shadow: 0 0 10px #ffffffA6;
+    display: none;
+  }
+  #introButton {
+    margin: 20% 0 0 5%;
+    width: 15%;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 8px 20px 15px 10px;
+  }
+  #introButton span {
+    display: none;
+  }
+  #introHeading small {
+    display: none;
+  }
+}
+@media only screen and (max-width: 885px) {
+  .intro {
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .intro {
+    height: 350px;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .intro {
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 535px) {
+  .intro {
+    height: 250px;
+  }
+  #introHeading {
+    font-size: 30px;
+  }
+  #introButton {
+    margin-top: 10%;
+  }
+}
+@media only screen and (max-width: 445px) {
+  .intro {
+    height: 200px;
+  }
+  #introHeading {
+    font-size: 25px;
+  }
+  #introButton {
+    margin-top: 5%;
   }
 }
