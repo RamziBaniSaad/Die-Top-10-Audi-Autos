@@ -25,8 +25,17 @@
   margin-right: 15px;
   padding-left: 3px;
 }
+/* Links */
+.link {
+  color: #000;
+}
+/* Kontaktdaten */
+.kontaktDaten {
+  padding-left: 10px;
+  border-left: #000000A6 solid 1px;
+}
 
-/* Chronisch sotiert */
+/* Body */
 body {
   color: #000000A6;
 }
@@ -71,6 +80,8 @@ body {
 }
 
 /* main */
+
+/* intro */
 .intro{
   background-image: linear-gradient(to top, rgba(0,0,0, .3), rgba(255,255,255,.5)), url(img/introImg.jpg);
   background-size:cover;
@@ -107,7 +118,30 @@ body {
   padding: 8px 0 0 5px;
 }
 
+/* Abschnitte */
+.abschnitt {
+  padding-top: 55px;
+  margin-bottom: -30px;
+}
+
+/* Einführung */
+.container h2, h4 {
+  padding: 30px 0 10px 0;
+}
+
+/* Modelle */
+.kachel {
+  background-color: #000000A6;
+}
+
+/* Kontakt */
+
+
+/* Über Uns */
+
+
 /* footer */
+
 
 /* Mediaqueries */
 
