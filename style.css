@@ -236,4 +236,19 @@ body {
   #introButton {
     margin-top: 5%;
   }
+  #introButtonScroll {
+    width: 30px;
+    height: 30px;
+    padding: 8px 0 0 3px;
+  }
+}
+@media only screen and (max-width: 445px) {
+  .intro {
+    height: 200px;
+  }
+  #introButtonScroll {
+    width: 30px;
+    height: 30px;
+    padding: 8px 0 0 3px;
+  }
 }
