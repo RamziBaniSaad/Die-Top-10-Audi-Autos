@@ -81,6 +81,23 @@ body {
 
 /* main */
 
+/* Zurück Button */
+#zurueckButton {
+  width: 70px;
+  height: 70px;
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 15px;
+  border-radius: 2rem;
+  box-shadow: 0 0 5px #000000A6;
+  background-color: #212529;
+}
+#zurueckButton:hover {
+  box-shadow: 0 0 20px #000000A6;
+  margin-bottom: 5px;
+}
+
 /* intro */
 .intro{
   background-image: linear-gradient(to top, rgba(0,0,0, .3), rgba(255,255,255,.5)), url(img/introImg.jpg);
@@ -110,7 +127,15 @@ body {
   font-size: 20px;
   font-weight: 600;
   padding-bottom: 15px;
-  box-shadow: 0 0 5px #ffffffA6;
+  box-shadow: 0 0 5px #000000A6;
+  background-color: #212529;
+  color: #fff;
+  border: 1px solid #000000A6;
+}
+#introButton:hover {
+  box-shadow: 0 0 20px #000000A6;
+  background-color: #000000A6;
+  border: 1px solid transparent;
 }
 #introButtonScroll {
   width: 30px;
@@ -120,7 +145,8 @@ body {
 
 /* Abschnitte */
 .abschnitt {
-  padding-top: 55px;
+  border-bottom: #000000A6 solid 1px;
+  padding: 55px 0 30px 0;
   margin-bottom: -30px;
 }
 
@@ -128,20 +154,32 @@ body {
 .container h2, h4 {
   padding: 30px 0 10px 0;
 }
+.container h5 {
+  padding: 20px 0 5px 0;
+}
 
 /* Modelle */
 .kachel {
   background-color: #000000A6;
 }
 
-/* Kontakt */
-
-
-/* Über Uns */
-
-
 /* footer */
-
+footer {
+  background-color: #212529;
+  text-align: center;
+  color: #fff;
+  margin-top: 80px;
+}
+.footerAbschnitt{
+  margin: 10px;
+}
+.footerItem {
+  color: #ffffffA6;
+}
+.inline-block-p {
+  display: inline-block;
+  margin-top: 12px;
+}
 
 /* Mediaqueries */
 
@@ -192,6 +230,9 @@ body {
     font-size: 15px;
     font-weight: 600;
     padding: 8px 20px 15px 10px;
+    box-shadow: 0 0 20px #000000A6;
+    background-color: #000000A6;
+    border: 1px solid transparent;
   }
   #introButton span {
     display: none;

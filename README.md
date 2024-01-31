@@ -29,3 +29,5 @@ Die Versionen:
 2.0 - Main - Main angefangen, intro voraussichtlich fertig.
 
 2.1 - Main Struktur - Main Struktur aufgebaut und mit Navbar verlinkt, alle Abschnitte außer "Modelle" ausgefüllt mit etwas Verbesserungsbedarf.
+
+3.0 - Footer - Main angepasst, Zurück nach oben Knopf hinzugefügt, Footer angefangen und beendet.
