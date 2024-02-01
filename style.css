@@ -8,6 +8,12 @@
   font-style: normal;
   letter-spacing: 1px;
 }
+.sekundaere-schrift-exo2{
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
 
 /* Icons */
 .material-symbols-outlined {
@@ -17,7 +23,6 @@
   'GRAD' 900,
   'opsz' 24
 }
-
 .icon {
   color: #000000A6;
   width: 30px;
@@ -25,12 +30,14 @@
   margin-right: 15px;
   padding-left: 3px;
 }
+
 /* Links */
 .link {
   color: #000;
 }
-/* Kontaktdaten */
-.kontaktDaten {
+
+/* kontakt-daten */
+.kontakt-daten {
   padding-left: 10px;
   border-left: #000000A6 solid 1px;
 }
@@ -91,7 +98,7 @@ body {
   right: 15px;
   border-radius: 2rem;
   box-shadow: 0 0 5px #000000A6;
-  background-color: #212529;
+  background-color: #000000A6;
 }
 #zurueckButton:hover {
   box-shadow: 0 0 20px #000000A6;
@@ -104,7 +111,7 @@ body {
   background-size:cover;
   height: 900px;
   margin-top: 86px;
-  min-width: 200px;
+  min-width: 400px;
 }
 #introHeading {
   padding: 10% 0 0 1%;
@@ -151,17 +158,59 @@ body {
 }
 
 /* Einführung */
-.container h2, h4 {
-  padding: 30px 0 10px 0;
+#mainContainer h2 {
+  padding: 30px 0 0 0;
 }
-.container h5 {
-  padding: 20px 0 5px 0;
+#mainContainer h4 {
+  padding: 30px 0 5px 0;
+}
+#mainContainer h5 {
+  padding: 15px 0 5px 0;
+}
+#kontaktAbschnitt h5 {
+  margin-top: 30px;
 }
 
 /* Modelle */
-.kachel {
-  background-color: #000000A6;
+#modelleAbschnitt h4 {
+  color: #000;
 }
+h4 strong {
+  font-size: 35px;
+}
+.titel {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.untertitel {
+  font-size: 18px;
+}
+.modell-img {
+  border-radius: 5px;
+}
+#eigenschaften small {
+  font-size: 15px;
+}
+#eigenschaften div, #eigenschaften h4 {
+  text-align: center;
+  padding: 5px 0 10px 0;
+}
+.mehr-erfahren-button {
+  width: 98%;
+  height: 60px;
+  font-size: 20px;
+  position: absolute;
+  bottom: 16px;
+  right: 2%;
+  border: #000 solid 1px;
+}
+.mehr-erfahren-pfeil {
+  width:50px;
+  height:50px;
+  transform:translateY(18px);
+  margin-top: -18px;
+}
+
 
 /* footer */
 footer {
@@ -169,11 +218,12 @@ footer {
   text-align: center;
   color: #fff;
   margin-top: 80px;
+  padding-top: 20px;
 }
 .footerAbschnitt{
   margin: 10px;
 }
-.footerItem {
+.footer-item {
   color: #ffffffA6;
 }
 .inline-block-p {
@@ -202,11 +252,30 @@ footer {
     height: 700px;
   }
 }
-@media only screen and (max-width: 1245px) {
-  .intro {
-    height: 600px;
+@media only screen and (max-width: 1400px) {
+  .mehr-erfahren-button {
+    height: 45px;
+  }
+  .mehr-erfahren-pfeil {
+    margin-top: -30px;
+  }
+  #beschreibung p {
+    font-size: 14px;
+  }
+  #modelleAbschnitt h4 {
+    font-size: 20px;
+  }
+  .modell {
+    margin-bottom: 80px;
   }
 }
+@media only screen and (max-width: 1199px) {
+  .mehr-erfahren-button {
+    bottom: -50px;
+  }
+}
+
+
 @media only screen and (max-width: 1060px) {
   .intro {
     height: 500px;
@@ -254,6 +323,9 @@ footer {
 @media only screen and (max-width: 620px) {
   .intro {
     height: 300px;
+  }
+  .mehr-erfahren-button {
+    width: 95%;
   }
 }
 @media only screen and (max-width: 535px) {
