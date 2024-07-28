@@ -221,10 +221,11 @@ footer {
   padding-top: 20px;
 }
 .footerAbschnitt{
-  margin: 10px;
+  margin: 20px;
 }
 .footer-item {
   color: #ffffffA6;
+  margin-top: 50px;
 }
 .inline-block-p {
   display: inline-block;
